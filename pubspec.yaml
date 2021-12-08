@@ -1,0 +1,94 @@
+name: immuno_plant
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  simple_animations: ^4.0.1
+  multilevel_drawer: ^2.0.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  flutter_keyboard_visibility: ^5.1.0
+  native_pdf_view: ^5.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/pdfs/immunosuppressants/
+    - assets/pdfs/transplantation/atg_antihymoglobin/
+    - assets/pdfs/transplantation/basiliximab/
+    - assets/pdfs/transplantation/cyclosporine/
+    - assets/pdfs/transplantation/everolimus/
+    - assets/pdfs/transplantation/mabthera/
+    - assets/pdfs/transplantation/mycophenolate_mofetil/
+    - assets/pdfs/transplantation/prednisolone/
+    - assets/pdfs/transplantation/sirolimus/
+    - assets/pdfs/transplantation/tacrolimus/
+    - assets/pdfs/immunosuppressants/calcineurin_inhibitors/cyclosporine/
+    - assets/pdfs/immunosuppressants/calcineurin_inhibitors/tacrolimus/
+    - assets/pdfs/immunosuppressants/corticosteroids/prednisolone/
+    - assets/pdfs/immunosuppressants/inosine_monophosphate_dehydrogenase_inhibitors/azathioorine/
+    - assets/pdfs/immunosuppressants/inosine_monophosphate_dehydrogenase_inhibitors/mycophenolate/
+    - assets/pdfs/immunosuppressants/interleukin_1_inhibitors/anakinra/
+    - assets/pdfs/immunosuppressants/janus_kinase_inhibitors/tofacitinib/
+    - assets/pdfs/immunosuppressants/mechanistic_target_of_rapamycin_inhibitors/everolimus/
+    - assets/pdfs/immunosuppressants/mechanistic_target_of_rapamycin_inhibitors/sirolimus/
+    - assets/pdfs/immunosuppressants/monoclonal_antibiodies/basiliximab/
+    - assets/pdfs/immunosuppressants/monoclonal_antibiodies/methotrexate/
+    - assets/pdfs/immunosuppressants/monoclonal_antibiodies/rituximab/
+    - assets/pdfs/immunosuppressants/polyclonal_antibiodies/antilymphocyte_polyclonal_antibody/
+    - assets/pdfs/immunosuppressants/pyrimidine_synthesis/leflunomide/
+    - assets/pdfs/immunosuppressants/sphingosine_1_phosphate/fingolimod/
+    - assets/pdfs/immunosuppressants/tnf_alpha_inhibitor/infliximab/
+    - assets/pdfs/immunosuppressants/tnf_alpha_inhibitor/adalimumab/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assdaets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/custom_app_bar.dart';
 import 'package:immuno_plant/widgets/classifications_card.dart';
 import 'package:immuno_plant/widgets/floating_action_button.dart';
-import 'package:immuno_plant/widgets/navigator_drawer.dart';
 
 import 'immunosuppressants_drugs_classes.dart';
 

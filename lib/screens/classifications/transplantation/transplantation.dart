@@ -4,7 +4,6 @@ import 'package:immuno_plant/screens/classifications/transplantation/transplanta
 import 'package:immuno_plant/widgets/custom_app_bar.dart';
 import 'package:immuno_plant/widgets/classifications_card.dart';
 import 'package:immuno_plant/widgets/floating_action_button.dart';
-import 'package:immuno_plant/widgets/navigator_drawer.dart';
 
 class Transplantation extends StatefulWidget {
   final String section;
@@ -23,7 +22,6 @@ class _TransplantationState extends State<Transplantation> {
     return Scaffold(
       appBar: CustomAppBar(section: widget.section),
       floatingActionButton: const CustomFloatingActionButton(),
-      drawer: const NavigatorDrawerWidget(),
       body: ListView(
         padding: const EdgeInsets.all(8),
         children: <Widget>[
@@ -44,6 +42,7 @@ class _TransplantationState extends State<Transplantation> {
               );
             },
           ),
+
           ClassificationsCard(
             id: 2,
             title: 'Tacrolimus',

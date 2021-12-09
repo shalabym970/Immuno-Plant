@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/custom_app_bar.dart';
 import 'package:immuno_plant/widgets/floating_action_button.dart';
-import 'package:immuno_plant/widgets/navigator_drawer.dart';
 import 'package:native_pdf_view/native_pdf_view.dart';
 
 class PdfViewer extends StatefulWidget {
@@ -24,7 +23,6 @@ class _PdfViewerState extends State<PdfViewer> {
     return Scaffold(
       appBar: CustomAppBar(section: widget.section),
       floatingActionButton: const CustomFloatingActionButton(),
-      drawer: const NavigatorDrawerWidget(),
       body: Stack(
         children: [
           Center(

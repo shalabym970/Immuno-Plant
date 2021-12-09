@@ -3,22 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/constant.dart';
 import 'package:immuno_plant/screens/classifications/immunosuppressants/immunosuppressants.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation.dart';
+import 'package:immuno_plant/widgets/custom_link_text.dart';
 import 'package:immuno_plant/widgets/out_line_button.dart';
 
+import 'abbreviation.dart';
+
 class HomePage extends StatefulWidget {
-   HomePage({Key? key, required this.pageState}) : super(key: key);
-   int pageState;
-
-
+  HomePage({Key? key, required this.pageState}) : super(key: key);
+  int pageState;
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-
-
-
   var _backgroundColor = Colors.white;
   var _headingColor = const Color(0xFFD04DB4);
 
@@ -80,7 +78,6 @@ class _HomePageState extends State<HomePage> {
     }
 
     return Stack(
-
       children: <Widget>[
         AnimatedContainer(
             curve: Curves.fastLinearToSlowEaseIn,
@@ -122,8 +119,8 @@ class _HomePageState extends State<HomePage> {
                               type: MaterialType.transparency,
                               child: Text(
                                 appName,
-                                style:
-                                    TextStyle(color: _headingColor, fontSize: 28),
+                                style: TextStyle(
+                                    color: _headingColor, fontSize: 28),
                               ),
                             ),
                           ],
@@ -136,7 +133,8 @@ class _HomePageState extends State<HomePage> {
                           child: Text(
                             "Dose modification of immunosuppressant drugs in different kidney disease modalities and management of adverse effects of transplantation drugs.",
                             textAlign: TextAlign.center,
-                            style: TextStyle(color: _headingColor, fontSize: 16),
+                            style:
+                                TextStyle(color: _headingColor, fontSize: 16),
                           ),
                         ),
                       )
@@ -171,7 +169,8 @@ class _HomePageState extends State<HomePage> {
                         type: MaterialType.transparency,
                         child: Text(
                           "Get Started",
-                          style: TextStyle(color: kBackgroundColor, fontSize: 16),
+                          style:
+                              TextStyle(color: kBackgroundColor, fontSize: 16),
                         ),
                       ),
                     ),
@@ -190,86 +189,131 @@ class _HomePageState extends State<HomePage> {
               color: kBackgroundColor.withOpacity(_loginOpacity),
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(25), topRight: Radius.circular(25))),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(bottom: 20),
-                    child: Column(
-                      children: const [
-                        Material(
-                          type: MaterialType.transparency,
-                          child: Text(
-                            "Choose where you want ",
-                            style: TextStyle(fontSize: 20),
+          child: Expanded(
+            flex: 1,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        children: const [
+                          Material(
+                            type: MaterialType.transparency,
+                            child: Text(
+                              "Choose where you want ",
+                              style: TextStyle(fontSize: 20),
+                            ),
                           ),
-                        ),
-                        Material(
-                          type: MaterialType.transparency,
-                          child: Text(
-                            "us to help you",
-                            style: TextStyle(fontSize: 20),
+                          Material(
+                            type: MaterialType.transparency,
+                            child: Text(
+                              "us to help you",
+                              style: TextStyle(fontSize: 20),
+                            ),
                           ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Immunosuppressants(
+                                      section: 'Immunosuppressants',
+                                    )),
+                          );
+                        });
+                      },
+                      child: const Material(
+                        type: MaterialType.transparency,
+                        child: OutlineBtn(
+                          btnText: "Immunosuppressants",
                         ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Transplantation(
+                                      section: 'Transplantation',
+                                    )),
+                          );
+                        });
+                      },
+                      child: const Material(
+                        type: MaterialType.transparency,
+                        child: OutlineBtn(
+                          btnText: "Transplantation",
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                         CustomLinkText(
+                              text: 'Abbreviation',
+                              onTap: () {
+                                {
+                                  setState(() {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const Abbreviation()),
+                                    );
+                                  });
+                                }
+                              }),
+
+                         const SizedBox(
+                          height: 10,
+                        ),
+                        CustomLinkText(
+                              text: 'About Us',
+                              onTap: () {
+                                {
+                                  showAboutDialog(
+                                      context: context,
+                                      applicationIcon: Image.asset(
+                                        'assets/images/Immuno-plant (1).png',
+                                        height:80 ,
+                                        width: 40,
+                                      ),
+                                      applicationName: 'Immuno Plant',
+                                      applicationVersion: '1.0.0',
+                                      applicationLegalese:
+                                          'Developed by Mohamed Shalaby',
+                                      children: [
+                                        const Text(
+                                            'We are a group of fifteen senior clinical pharmacy students from Alexandria University  and we made IMMUNO-PLANT as our graduation project after a period of training in the nephrology department of Alexandria Main University Hospital. This application aims to provide accessible information to be used by physicians , where it is concerned with immunosuppressants dosing in kidney diseases and different dialysis modalities , in addition to grouping the management of the most common adverse effects that occur with the use of these drugs after transplantation. ')
+                                      ]);
+                                }
+                              }),
+
                       ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Immunosuppressants(
-                                    section: 'Immunosuppressants',
-                                  )),
-                        );
-                      });
-                    },
-                    child: const Material(
-                      type: MaterialType.transparency,
-                      child: OutlineBtn(
-                        btnText: "Immunosuppressants",
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Transplantation(
-                                    section: 'Transplantation',
-                                  )),
-                        );
-                      });
-                    },
-                    child: const Material(
-                      type: MaterialType.transparency,
-                      child: OutlineBtn(
-                        btnText: "Transplantation",
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                ],
-              ),
-            ],
+
+
+                ),
+              ],
+            ),
           ),
         ),
       ],

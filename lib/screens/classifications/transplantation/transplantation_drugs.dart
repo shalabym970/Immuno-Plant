@@ -11,7 +11,6 @@ import 'package:immuno_plant/screens/classifications/transplantation/transplanta
 import 'package:immuno_plant/widgets/alert_dialog.dart';
 import 'package:immuno_plant/widgets/custom_app_bar.dart';
 import 'package:immuno_plant/widgets/floating_action_button.dart';
-import 'package:immuno_plant/widgets/navigator_drawer.dart';
 
 class TransplantationDrugs extends StatefulWidget {
   final String section;
@@ -32,7 +31,6 @@ class _TransplantationDrugsState extends State<TransplantationDrugs> {
         section: widget.section,
       ),
       floatingActionButton: const CustomFloatingActionButton(),
-      drawer: const NavigatorDrawerWidget(),
       body: transplantationDrugs(context),
     );
   }

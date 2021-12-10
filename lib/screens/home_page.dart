@@ -274,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Abbreviation()),
+                                builder: (context) => const Abbreviation(section: 'Abbreviation',)),
                           );
                         });
                       }
@@ -332,24 +332,22 @@ class _HomePageState extends State<HomePage> {
           ),
           const Text('- Dr. Enas Abd Elaziz Mohamed.'),
           Link(
-            uri: Uri.parse(
-                'Gs-enas.elkady@alexu.edu.eg'),
+            uri: Uri.parse('Gs-enas.elkady@alexu.edu.eg'),
             target: LinkTarget.blank,
             builder: (BuildContext ctx, FollowLink? openLink) {
               return TextButton(
-                onPressed:() =>openLink,
+                onPressed: () => openLink,
                 child: const Text('Gs-enas.elkady@alexu.edu.eg'),
               );
             },
           ),
           const Text('- Dr. Dina Mostafa Elgameel.'),
           Link(
-            uri: Uri.parse(
-                's-dina.elgameel@alexu.edu.eg'),
+            uri: Uri.parse('s-dina.elgameel@alexu.edu.eg'),
             target: LinkTarget.blank,
             builder: (BuildContext ctx, FollowLink? openLink) {
               return TextButton(
-                onPressed:() =>openLink,
+                onPressed: () => openLink,
                 child: const Text('s-dina.elgameel@alexu.edu.eg\n'),
               );
             },
@@ -364,18 +362,16 @@ class _HomePageState extends State<HomePage> {
               const Text('Github: '),
               Expanded(
                 child: Link(
-                  uri: Uri.parse(
-                      'https://github.com/shalabym970'),
+                  uri: Uri.parse('https://github.com/shalabym970'),
                   target: LinkTarget.blank,
                   builder: (BuildContext ctx, FollowLink? openLink) {
                     return TextButton(
-                      onPressed:() =>openLink,
+                      onPressed: () => openLink,
                       child: const Text('https://github.com/shalabym970'),
                     );
                   },
                 ),
               ),
-
             ],
           ),
           Row(
@@ -388,13 +384,13 @@ class _HomePageState extends State<HomePage> {
                   target: LinkTarget.blank,
                   builder: (BuildContext ctx, FollowLink? openLink) {
                     return TextButton(
-                      onPressed:() =>openLink,
-                      child: const Text('linkedin.com/in/mohamed-shalaby-56444b158'),
+                      onPressed: () => openLink,
+                      child: const Text(
+                          'linkedin.com/in/mohamed-shalaby-56444b158'),
                     );
                   },
                 ),
               ),
-
             ],
           ),
           Row(
@@ -402,21 +398,18 @@ class _HomePageState extends State<HomePage> {
               const Text('Gmail: '),
               Expanded(
                 child: Link(
-                  uri: Uri.parse(
-                      'shalabym970@gmail.com'),
+                  uri: Uri.parse('shalabym970@gmail.com'),
                   target: LinkTarget.blank,
                   builder: (BuildContext ctx, FollowLink? openLink) {
                     return TextButton(
-                      onPressed:() =>openLink,
+                      onPressed: () => openLink,
                       child: const Text('shalabym970@gmail.com'),
                     );
                   },
                 ),
               ),
-
             ],
           ),
-
         ]);
   }
 }

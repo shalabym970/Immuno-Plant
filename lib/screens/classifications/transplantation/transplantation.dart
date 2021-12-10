@@ -113,7 +113,7 @@ class _TransplantationState extends State<Transplantation> {
           ),
           ClassificationsCard(
             id: 6,
-            title: 'ATG antihymoglobin',
+            title: 'Anti-Iymphocyte polclonal antibody (ATG)',
             onTap: () {
               setState(() {
                 id = 6;
@@ -123,7 +123,7 @@ class _TransplantationState extends State<Transplantation> {
                 MaterialPageRoute(
                     builder: (context) => TransplantationDrugs(
                           id: id,
-                          section: 'ATG antihymoglobin',
+                          section: 'Anti-Iymphocyte polclonal antibody (ATG)',
                         )),
               );
             },

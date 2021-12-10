@@ -8,14 +8,17 @@ class CustomLinkText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap ,
-      child: Text(
-          text,
-        style: const TextStyle(
-          color: Colors.black,
-          decoration: TextDecoration.underline,
-          fontSize: 20,
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        onTap: onTap ,
+        child: Text(
+            text,
+          style: const TextStyle(
+            color: Colors.black,
+            decoration: TextDecoration.underline,
+            fontSize: 20,
+          ),
         ),
       ),
     );

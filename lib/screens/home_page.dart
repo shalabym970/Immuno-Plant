@@ -81,6 +81,7 @@ class _HomePageState extends State<HomePage> {
     return Stack(
       children: <Widget>[
         AnimatedContainer(
+          height: MediaQuery.of(context).size.height,
             curve: Curves.fastLinearToSlowEaseIn,
             duration: const Duration(milliseconds: 1000),
             color: _backgroundColor,
@@ -184,6 +185,7 @@ class _HomePageState extends State<HomePage> {
               ),
             )),
         AnimatedContainer(
+
           padding: const EdgeInsets.all(32),
           width: _loginWidth,
           height: _loginHeight,

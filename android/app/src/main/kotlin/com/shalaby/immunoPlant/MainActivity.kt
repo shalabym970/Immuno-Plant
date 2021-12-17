@@ -1,4 +1,4 @@
-package com.example.immuno_plant
+package com.shalaby.immunoPlant
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.immuno_plant">
+    package="com.shalaby.immunoPlant">
    <application
         android:label="Immuno Plant"
         android:icon="@mipmap/ic_launcher">

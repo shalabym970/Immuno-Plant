@@ -81,105 +81,111 @@ class _HomePageState extends State<HomePage> {
     return Stack(
       children: <Widget>[
         AnimatedContainer(
+          height: MediaQuery.of(context).size.height,
             curve: Curves.fastLinearToSlowEaseIn,
             duration: const Duration(milliseconds: 1000),
             color: _backgroundColor,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      widget.pageState = 0;
-                    });
-                  },
-                  child: Column(
-                    children: <Widget>[
-                      AnimatedContainer(
-                        curve: Curves.fastLinearToSlowEaseIn,
-                        duration: const Duration(milliseconds: 1000),
-                        margin: EdgeInsets.only(
-                          top: _headingTop,
-                        ),
-                        child: Row(
-                          children: [
-                            Container(
-                              child: widget.pageState != 0
-                                  ? Image.asset(
-                                      'assets/images/Immuno-plant (2).png',
-                                      height: 90,
-                                      width: 120,
-                                    )
-                                  : Image.asset(
-                                      'assets/images/Immuno-plant (1).png',
-                                      height: 90,
-                                      width: 120,
-                                    ),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        widget.pageState = 0;
+                      });
+                    },
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: <Widget>[
+                          AnimatedContainer(
+                            curve: Curves.fastLinearToSlowEaseIn,
+                            duration: const Duration(milliseconds: 1000),
+                            margin: EdgeInsets.only(
+                              top: _headingTop,
                             ),
-                            Material(
+                            child: Row(
+                              children: [
+                                Container(
+                                  child: widget.pageState != 0
+                                      ? Image.asset(
+                                          'assets/images/Immuno-plant (2).png',
+                                          height: 90,
+                                          width: 120,
+                                        )
+                                      : Image.asset(
+                                          'assets/images/Immuno-plant (1).png',
+                                          height: 90,
+                                          width: 120,
+                                        ),
+                                ),
+                                Material(
+                                  type: MaterialType.transparency,
+                                  child: Text(
+                                    appName,
+                                    style: TextStyle(
+                                        color: _headingColor, fontSize: 28),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.all(10),
+                            child: Material(
                               type: MaterialType.transparency,
                               child: Text(
-                                appName,
-                                style: TextStyle(
-                                    color: _headingColor, fontSize: 28),
+                                "Dose modification of immunosuppressant drugs in different kidney disease modalities and management of adverse effects of transplantation drugs.",
+                                textAlign: TextAlign.center,
+                                style:
+                                    TextStyle(color: _headingColor, fontSize: 16),
                               ),
                             ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.all(10),
-                        child: Material(
-                          type: MaterialType.transparency,
-                          child: Text(
-                            "Dose modification of immunosuppressant drugs in different kidney disease modalities and management of adverse effects of transplantation drugs.",
-                            textAlign: TextAlign.center,
-                            style:
-                                TextStyle(color: _headingColor, fontSize: 16),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 32),
-                  child: Center(
-                    child: Image.asset("assets/images/splash_bg.png"),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      if (widget.pageState != 0) {
-                        widget.pageState = 0;
-                      } else {
-                        widget.pageState = 1;
-                      }
-                    });
-                  },
-                  child: Container(
-                    margin: const EdgeInsets.all(32),
-                    padding: const EdgeInsets.all(20),
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        borderRadius: BorderRadius.circular(50)),
-                    child: const Center(
-                      child: Material(
-                        type: MaterialType.transparency,
-                        child: Text(
-                          "Get Started",
-                          style:
-                              TextStyle(color: kBackgroundColor, fontSize: 16),
-                        ),
+                          )
+                        ],
                       ),
                     ),
                   ),
-                )
-              ],
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Center(
+                      child: Image.asset("assets/images/splash_bg.png"),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        if (widget.pageState != 0) {
+                          widget.pageState = 0;
+                        } else {
+                          widget.pageState = 1;
+                        }
+                      });
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.all(32),
+                      padding: const EdgeInsets.all(20),
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                          borderRadius: BorderRadius.circular(50)),
+                      child: const Center(
+                        child: Material(
+                          type: MaterialType.transparency,
+                          child: Text(
+                            "Get Started",
+                            style:
+                                TextStyle(color: kBackgroundColor, fontSize: 16),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )),
         AnimatedContainer(
+
           padding: const EdgeInsets.all(32),
           width: _loginWidth,
           height: _loginHeight,
@@ -190,116 +196,107 @@ class _HomePageState extends State<HomePage> {
               color: kBackgroundColor.withOpacity(_loginOpacity),
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(25), topRight: Radius.circular(25))),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Column(children: <Widget>[
-                const SizedBox(
-                  height: 40,
-                ),
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20),
-                  child: Column(
-                    children: const [
-                      Material(
-                        type: MaterialType.transparency,
-                        child: Text(
-                          "Choose where you want ",
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
-                      Material(
-                        type: MaterialType.transparency,
-                        child: Text(
-                          "us to help you",
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
-                    ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(children: <Widget>[
+                  const SizedBox(
+                    height: 40,
                   ),
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Immunosuppressants(
-                                  section: 'Immunosuppressants',
-                                )),
-                      );
-                    });
-                  },
-                  child: const Material(
-                    type: MaterialType.transparency,
-                    child: OutlineBtn(
-                      btnText: "Immunosuppressants",
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 20),
+                    child: Column(
+                      children: const [
+                        Material(
+                          type: MaterialType.transparency,
+                          child: Text(
+                            "Choose where you want ",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                        Material(
+                          type: MaterialType.transparency,
+                          child: Text(
+                            "us to help you",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Transplantation(
-                                  section: 'Transplantation',
-                                )),
-                      );
-                    });
-                  },
-                  child: const Material(
-                    type: MaterialType.transparency,
-                    child: OutlineBtn(
-                      btnText: "Transplantation",
-                    ),
+                  const SizedBox(
+                    height: 40,
                   ),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                CustomLinkText(
-                    text: 'Abbreviation',
+                  GestureDetector(
                     onTap: () {
-                      {
-                        setState(() {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Abbreviation(section: 'Abbreviation',)),
-                          );
-                        });
-                      }
-                    }),
-                const SizedBox(
-                  height: 10,
-                ),
-                CustomLinkText(
-                  text: 'About Us',
-                  onTap: aboutImmunoPlant,
-                ),
-                // Link(
-                //   uri: Uri.parse(
-                //       'https://pub.dev/documentation/url_launcher/latest/link/link-library.html'),
-                //   target: LinkTarget.blank,
-                //   builder: (BuildContext ctx, FollowLink? openLink) {
-                //     return TextButton.icon(
-                //       onPressed: openLink,
-                //       label: const Text('Link Widget documentation'),
-                //       icon: const Icon(Icons.read_more),
-                //     );
-                //   },
-                // ),
-              ]),
-            ],
+                      setState(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Immunosuppressants(
+                                    section: 'Immunosuppressants',
+                                  )),
+                        );
+                      });
+                    },
+                    child: const Material(
+                      type: MaterialType.transparency,
+                      child: OutlineBtn(
+                        btnText: "Immunosuppressants",
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Transplantation(
+                                    section: 'Transplantation',
+                                  )),
+                        );
+                      });
+                    },
+                    child: const Material(
+                      type: MaterialType.transparency,
+                      child: OutlineBtn(
+                        btnText: "Transplantation",
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  CustomLinkText(
+                      text: 'Abbreviation',
+                      onTap: () {
+                        {
+                          setState(() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Abbreviation(section: 'Abbreviation',)),
+                            );
+                          });
+                        }
+                      }),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  CustomLinkText(
+                    text: 'About Us',
+                    onTap: aboutImmunoPlant,
+                  ),
+
+                ]),
+              ],
+            ),
           ),
         ),
       ],

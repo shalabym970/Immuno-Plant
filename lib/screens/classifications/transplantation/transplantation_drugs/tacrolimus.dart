@@ -36,7 +36,7 @@ class Tacrolimus extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/tacrolimus/level.pdff',
+                      'assets/pdfs/transplantation/tacrolimus/level.pdf',
                       section: 'Level',
                     )),
               );

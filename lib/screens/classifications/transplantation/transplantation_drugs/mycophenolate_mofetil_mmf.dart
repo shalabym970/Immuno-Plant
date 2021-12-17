@@ -42,7 +42,7 @@ class MMF extends StatelessWidget {
               );
             }),
         DrugsCard(
-            title: 'Leuckpenia',
+            title: 'leukopenia',
             icon: cardDrugIcon,
             onTap: () {
               Navigator.push(
@@ -51,7 +51,7 @@ class MMF extends StatelessWidget {
                     builder: (context) => const PdfViewer(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/leuckpenia.pdf',
-                      section: 'Leuckpenia',
+                      section: 'leukopenia',
                     )),
               );
             }),

@@ -126,11 +126,6 @@ class Abbreviation extends StatelessWidget {
               DataCell(Text('Scientist')),
             ]),
             DataRow(cells: [
-              DataCell(Text('20')),
-              DataCell(Text('John',style: TextStyle(fontWeight: FontWeight.bold),)),
-              DataCell(Text('Scientist')),
-            ]),
-            DataRow(cells: [
               DataCell(Text('21')),
               DataCell(Text('CHOP',style: TextStyle(fontWeight: FontWeight.bold),)),
               DataCell(Text('cyclophosphamide, doxorubicin hydrochloride(Hydroxydaunorubicin), vincristine sulfate (Oncovin), and Prednisone')),

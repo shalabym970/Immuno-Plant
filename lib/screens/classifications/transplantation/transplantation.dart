@@ -147,7 +147,7 @@ class _TransplantationState extends State<Transplantation> {
           ),
           ClassificationsCard(
             id: 8,
-            title: 'Mabthera',
+            title: 'Rituximab',
             onTap: () {
               setState(() {
                 id = 8;
@@ -157,7 +157,7 @@ class _TransplantationState extends State<Transplantation> {
                 MaterialPageRoute(
                     builder: (context) => TransplantationDrugs(
                           id: id,
-                          section: 'Mabthera',
+                          section: 'Rituximab',
                         )),
               );
             },

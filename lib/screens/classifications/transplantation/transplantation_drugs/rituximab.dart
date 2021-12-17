@@ -5,8 +5,8 @@ import 'package:immuno_plant/widgets/drugs_card.dart';
 import '../../../../constant.dart';
 import '../../pdf_viewer.dart';
 
-class Mabthera extends StatelessWidget {
-  const Mabthera({Key? key}) : super(key: key);
+class Rituximab extends StatelessWidget {
+  const Rituximab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

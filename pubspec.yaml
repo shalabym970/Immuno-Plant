@@ -20,6 +20,7 @@ dependencies:
   flutter_keyboard_visibility: ^5.1.0
   native_pdf_view: ^5.0.0
   url_launcher: ^6.0.17
+  new_version: ^0.2.3
 
 
 

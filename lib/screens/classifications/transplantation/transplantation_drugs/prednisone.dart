@@ -22,7 +22,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/ddi_prednisone.pdf',
+                      'assets/pdfs/transplantation/prednisone/ddi_prednisone.pdf',
                       section: 'Drug interactions ',
                     )),
               );
@@ -36,7 +36,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/glucoma.pdf',
+                      'assets/pdfs/transplantation/prednisone/glucoma.pdf',
                       section: 'GLUCOMA',
                     )),
               );
@@ -50,7 +50,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/ocular_ulcer.pdf',
+                      'assets/pdfs/transplantation/prednisone/ocular_ulcer.pdf',
                       section: 'Ocular ulcer',
                     )),
               );
@@ -64,7 +64,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/osteoporosis.pdf',
+                      'assets/pdfs/transplantation/prednisone/osteoporosis.pdf',
                       section: 'Osteoporosis',
                     )),
               );
@@ -78,7 +78,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/vertebral_fractures.pdf',
+                      'assets/pdfs/transplantation/prednisone/vertebral_fractures.pdf',
                       section: 'Vertebral fractures',
                     )),
               );
@@ -92,7 +92,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/weight_gain.pdf',
+                      'assets/pdfs/transplantation/prednisone/weight_gain.pdf',
                       section: 'Weight gain',
                     )),
               );
@@ -106,7 +106,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/hypertension.pdf',
+                      'assets/pdfs/transplantation/prednisone/hypertension.pdf',
                       section: 'Hypertension',
                     )),
               );
@@ -120,7 +120,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/fluid_retention.pdf',
+                      'assets/pdfs/transplantation/prednisone/fluid_retention.pdf',
                       section: 'Fluid retention ',
                     )),
               );
@@ -134,7 +134,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/skin_atrophy.pdf',
+                      'assets/pdfs/transplantation/prednisone/skin_atrophy.pdf',
                       section: 'Skin atrophy ',
                     )),
               );
@@ -148,7 +148,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/wound_healing.pdf',
+                      'assets/pdfs/transplantation/prednisone/wound_healing.pdf',
                       section: 'Wound healing ',
                     )),
               );
@@ -162,7 +162,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/acne.pdf',
+                      'assets/pdfs/transplantation/prednisone/acne.pdf',
                       section: 'Acne',
                     )),
               );
@@ -176,7 +176,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/prednisolone_hyperglicemia .pdf',
+                      'assets/pdfs/transplantation/prednisone/prednisone_hyperglycema.pdf',
                       section: 'Hyperglycemia',
                     )),
               );
@@ -190,7 +190,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/cushing_syndrome.pdf',
+                      'assets/pdfs/transplantation/prednisone/cushing_syndrome.pdf',
                       section: 'Cushing syndrome & Hpa axis suppression ',
                     )),
               );
@@ -204,7 +204,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/psychosis.pdf',
+                      'assets/pdfs/transplantation/prednisone/psychosis.pdf',
                       section: 'Psychosis',
                     )),
               );
@@ -218,7 +218,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/musculoskeletal.pdf',
+                      'assets/pdfs/transplantation/prednisone/musculoskeletal.pdf',
                       section: 'Musculoskeletal (myopathy)',
                     )),
               );
@@ -232,7 +232,7 @@ class Prednisone extends StatelessWidget {
                 MaterialPageRoute(
                     builder: (context) => const PdfViewer(
                       pdfPass:
-                      'assets/pdfs/transplantation/prednisolone/git_disorders.pdf',
+                      'assets/pdfs/transplantation/prednisone/git_disorders.pdf',
                       section: 'Git disorders ( peptic ulcer and gastric bleeding )',
                     )),
               );

@@ -152,6 +152,9 @@ class _HomePageState extends State<HomePage> {
                       child: Image.asset("assets/images/splash_bg.png"),
                     ),
                   ),
+                  const SizedBox(
+                    height:100,
+                  ),
                   GestureDetector(
                     onTap: () {
                       setState(() {
@@ -287,7 +290,7 @@ class _HomePageState extends State<HomePage> {
                         }
                       }),
                   const SizedBox(
-                    height: 10,
+                    height: 15,
                   ),
                   CustomLinkText(
                     text: 'About Us',

@@ -211,6 +211,8 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 20),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: const [
                         Material(
                           type: MaterialType.transparency,
@@ -232,22 +234,24 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 40,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Immunosuppressants(
-                                    section: 'Immunosuppressants',
-                                  )),
-                        );
-                      });
-                    },
-                    child: const Material(
-                      type: MaterialType.transparency,
-                      child: OutlineBtn(
-                        btnText: "Immunosuppressants",
+                  Center(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Immunosuppressants(
+                                      section: 'Immunosuppressants',
+                                    )),
+                          );
+                        });
+                      },
+                      child: const Material(
+                        type: MaterialType.transparency,
+                        child: OutlineBtn(
+                          btnText: "Immunosuppressants",
+                        ),
                       ),
                     ),
                   ),

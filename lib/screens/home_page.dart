@@ -329,7 +329,7 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
           const Text(
-              '- Maiar Tarek Nomeir.\n- Manar Adel Ibrahim.\n- Mariam Hassan Mokhtar.\n- Mariam Mohamed Hassan.\n- Marwa Mohamed Elsayed.\n- Marwan Ibrahim Mohamed.\n- Mohamed Sherif Fathy.\n- Mohamed Taher Mohamed.\n- Myriam Elsayed Mahfouz.\n- Nancy Hassan Mohamed.\n- Nouran Abdalla Elsayed.\n- Nouran Mahmoud Tarek.\n- Nouran Nouh Mohamed.\n-Sara Khairy Fouad.\n- Yomna Ashraf Ashmawy.\n'),
+              '- Maiar Tarek Nomeir.\n- Manar Adel Ibrahim.\n- Mariam Hassan Mokhtar.\n- Mariam Mohamed Hassan.\n- Marwa Mohamed Elsayed.\n- Marwan Ibrahim Mohamed.\n- Mohamed Sherif Fathy.\n- Mohamed Taher Mohamed.\n- Myriam Elsayed Mahfouz.\n- Nancy Hassan Mohamed.\n- Nouran Abdalla Elsayed.\n- Nouran Mahmoud Tarek.\n- Nouran Nouh Mohamed.\n- Sara Khairy Fouad.\n- Yomna Ashraf Ashmawy.\n'),
           const Text(
             'Project supervisors: ',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -360,24 +360,7 @@ class _HomePageState extends State<HomePage> {
             'Application developer:',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
-          const Text('Eng.Mohamed Shalaby.'),
-          Row(
-            children: [
-              const Text('Github: '),
-              Expanded(
-                child: Link(
-                  uri: Uri.parse('https://github.com/shalabym970'),
-                  target: LinkTarget.blank,
-                  builder: (BuildContext ctx, FollowLink? openLink) {
-                    return TextButton(
-                      onPressed: () => openLink,
-                      child: const Text('https://github.com/shalabym970'),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+          const Text('Mohamed Shalaby'),
           Row(
             children: [
               const Text('LinkedIn: '),

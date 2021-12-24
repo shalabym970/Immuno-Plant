@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
       dismissButtonText: "Skip",
       dialogText: "Please update the app from "+status.localVersion+" to "+status.storeVersion,
       dismissAction: (){
-        SystemNavigator.pop();
+        Navigator.pop(context);
       },
       updateButtonText: "Lets update"
 

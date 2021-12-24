@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:immuno_plant/constant.dart';
 import 'package:immuno_plant/screens/classifications/immunosuppressants/immunosuppressants.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation.dart';
 import 'package:immuno_plant/widgets/custom_link_text.dart';
 import 'package:immuno_plant/widgets/out_line_button.dart';
+import 'package:new_version/new_version.dart';
 import 'package:url_launcher/link.dart';
 
 import 'abbreviation.dart';
@@ -38,6 +40,28 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    _checkVersion();
+  }
+
+  void _checkVersion() async {
+    final newVersion = NewVersion(
+      iOSId: "com.shalaby.immunoPlant",
+      androidId: "com.shalaby.immunoPlant",
+    );
+    // newVersion.showAlertIfNecessary(context: context);
+    final status  = await newVersion.getVersionStatus();
+    newVersion.showUpdateDialog(
+      context: context,
+      versionStatus: status! ,
+      dialogTitle: "Immuno Plant has an UPDATE!!!",
+      dismissButtonText: "Skip",
+      dialogText: "Please update the app from "+status.localVersion+" to "+status.storeVersion,
+      dismissAction: (){
+        SystemNavigator.pop();
+      },
+      updateButtonText: "Lets update"
+
+    );
   }
 
   @override
@@ -81,7 +105,7 @@ class _HomePageState extends State<HomePage> {
     return Stack(
       children: <Widget>[
         AnimatedContainer(
-          height: MediaQuery.of(context).size.height,
+            height: MediaQuery.of(context).size.height,
             curve: Curves.fastLinearToSlowEaseIn,
             duration: const Duration(milliseconds: 1000),
             color: _backgroundColor,
@@ -137,8 +161,8 @@ class _HomePageState extends State<HomePage> {
                               child: Text(
                                 "Dose modification of immunosuppressant drugs in different kidney disease modalities and management of adverse effects of transplantation drugs.",
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: _headingColor, fontSize: 16),
+                                style: TextStyle(
+                                    color: _headingColor, fontSize: 16),
                               ),
                             ),
                           )
@@ -153,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   const SizedBox(
-                    height:100,
+                    height: 100,
                   ),
                   GestureDetector(
                     onTap: () {
@@ -177,8 +201,8 @@ class _HomePageState extends State<HomePage> {
                           type: MaterialType.transparency,
                           child: Text(
                             "Get Started",
-                            style:
-                                TextStyle(color: kBackgroundColor, fontSize: 16),
+                            style: TextStyle(
+                                color: kBackgroundColor, fontSize: 16),
                           ),
                         ),
                       ),
@@ -188,7 +212,6 @@ class _HomePageState extends State<HomePage> {
               ),
             )),
         AnimatedContainer(
-
           padding: const EdgeInsets.all(32),
           width: _loginWidth,
           height: _loginHeight,
@@ -288,7 +311,9 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Abbreviation(section: 'Abbreviation',)),
+                                  builder: (context) => const Abbreviation(
+                                        section: 'Abbreviation',
+                                      )),
                             );
                           });
                         }
@@ -300,7 +325,6 @@ class _HomePageState extends State<HomePage> {
                     text: 'About Us',
                     onTap: aboutImmunoPlant,
                   ),
-
                 ]),
               ],
             ),

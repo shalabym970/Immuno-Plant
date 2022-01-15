@@ -75,13 +75,8 @@ class Abbreviation extends StatelessWidget {
                         DataCell(Text('angiotensin receptor blocker')),
                       ]),
                       DataRow(cells: [
-                        DataCell(Text('8')),
-                        DataCell(Text('Arb',style: TextStyle(fontWeight: FontWeight.bold),)),
-                        DataCell(Text('angiotensin converting enzyme inhibitor')),
-                      ]),
-                      DataRow(cells: [
                         DataCell(Text('9')),
-                        DataCell(Text('Atg',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('ATG',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('anti thymocyte globulin')),
                       ]),
                       DataRow(cells: [
@@ -186,7 +181,7 @@ class Abbreviation extends StatelessWidget {
                       ]),
                       DataRow(cells: [
                         DataCell(Text('31')),
-                        DataCell(Text('DC cardioversion',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('DC Cardioversion',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('direct-current cardioversion')),
                       ]),
                       DataRow(cells: [
@@ -216,17 +211,17 @@ class Abbreviation extends StatelessWidget {
                       ]),
                       DataRow(cells: [
                         DataCell(Text('37')),
-                        DataCell(Text('HBsAg',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('HBSAg',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('hepatitis B surface antigen')),
                       ]),
                       DataRow(cells: [
                         DataCell(Text('38')),
-                        DataCell(Text('HD',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('Hd',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('Hemodialysis')),
                       ]),
                       DataRow(cells: [
                         DataCell(Text('39')),
-                        DataCell(Text('HDF',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('Hdf',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('Hemodiafiltration')),
                       ]),
                       DataRow(cells: [

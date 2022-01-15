@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Cyclosporine extends StatelessWidget {
   const Cyclosporine({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/drug_interctions.pdf',
                           section: 'Drug interactions',
@@ -34,7 +34,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/cyclo_level.pdf',
                           section: 'Level',
@@ -48,7 +48,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/hypertension.pdf',
                           section: 'Hypertension',
@@ -62,7 +62,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/nephrotoxicity.pdf',
                           section: 'Nephrotoxicity',
@@ -76,7 +76,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/neurotoxicity.pdf',
                           section: 'Neurotoxicity',
@@ -90,7 +90,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/migraine_induced_vomiting.pdf',
                           section: 'Migraine induced vomiting',
@@ -104,7 +104,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/hypertrichosis.pdf',
                           section: 'Hypertrichosis',
@@ -118,7 +118,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/infection.pdf',
                           section: 'Infection',
@@ -132,7 +132,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/gingival_hyperplasia.pdf',
                           section: 'Gingival hyperplasia',
@@ -146,7 +146,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/UTI.pdf',
                           section: 'UTI*',
@@ -160,7 +160,7 @@ class Cyclosporine extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/cyclosporine/dyslipidemia_general.pdf',
                           section: 'Dyslipidemia*',

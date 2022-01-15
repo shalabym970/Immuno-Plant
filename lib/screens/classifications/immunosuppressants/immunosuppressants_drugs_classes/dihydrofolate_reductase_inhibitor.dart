@@ -1,11 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
 import '../immunosuppressants_drug_cases.dart';
 
-class SphingosinePhosphateReceptorModulator extends StatelessWidget {
-   SphingosinePhosphateReceptorModulator({Key? key}) : super(key: key);
+class DihydrofolateReductaseInhibitor extends StatelessWidget {
+  const DihydrofolateReductaseInhibitor({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +15,12 @@ class SphingosinePhosphateReceptorModulator extends StatelessWidget {
       children: <Widget>[
         DrugsCard(
             icon: cardDrugsListIcon,
-            title: 'Fingolimod',
+            title: 'Methotrexate',
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>  ImmunosuppressantsDrugCases(section: 'Fingolimod',id: 'Fingolimod',)),
+                    builder: (context) =>  ImmunosuppressantsDrugCases(section: 'Methotrexate',id: 'Methotrexate',)),
               );
             }),
       ],

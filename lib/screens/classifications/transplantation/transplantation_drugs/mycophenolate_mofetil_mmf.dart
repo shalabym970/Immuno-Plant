@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class MMF extends StatelessWidget {
   const MMF({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/drug_interactions.pdf',
                       section: 'Drug interactions',
@@ -34,7 +34,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/diarrhea.pdf',
                       section: 'Diarrhea',
@@ -48,7 +48,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/leuckpenia.pdf',
                       section: 'leukopenia',
@@ -62,7 +62,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/malignancy.pdf',
                       section: 'Malignancy',
@@ -76,7 +76,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/prca.pdf',
                       section: 'PRCA',
@@ -90,7 +90,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/hypersensitivity.pdf',
                       section: 'Hypersensitivity',
@@ -104,7 +104,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/infection_cmv.pdf',
                       section: 'infection ( CMV)',
@@ -118,7 +118,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/resistance_to_mmf.pdf',
                       section: 'Resistance to MMF',
@@ -132,7 +132,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/UTI.pdf',
                       section: 'UTI *',
@@ -146,7 +146,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/hyperglycemia.pdf',
                       section: 'Hyperglycemia*',
@@ -160,7 +160,7 @@ class MMF extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mycophenolate_mofetil/dyslipidemia_general.pdf',
                       section: 'Dyslipidemia*',

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Prednisone extends StatelessWidget {
   const Prednisone({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/ddi_prednisone.pdf',
                       section: 'Drug interactions ',
@@ -28,16 +28,16 @@ class Prednisone extends StatelessWidget {
               );
             }),
         DrugsCard(
-            title: 'GLUCOMA',
+            title: 'Glucoma',
             icon: cardDrugIcon,
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/glucoma.pdf',
-                      section: 'GLUCOMA',
+                      section: 'Glucoma',
                     )),
               );
             }),
@@ -48,7 +48,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/ocular_ulcer.pdf',
                       section: 'Ocular ulcer',
@@ -62,7 +62,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/osteoporosis.pdf',
                       section: 'Osteoporosis',
@@ -76,7 +76,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/vertebral_fractures.pdf',
                       section: 'Vertebral fractures',
@@ -90,7 +90,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/weight_gain.pdf',
                       section: 'Weight gain',
@@ -104,7 +104,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/hypertension.pdf',
                       section: 'Hypertension',
@@ -118,7 +118,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/fluid_retention.pdf',
                       section: 'Fluid retention ',
@@ -132,7 +132,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/skin_atrophy.pdf',
                       section: 'Skin atrophy ',
@@ -146,7 +146,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/wound_healing.pdf',
                       section: 'Wound healing ',
@@ -160,7 +160,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/acne.pdf',
                       section: 'Acne',
@@ -174,7 +174,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/prednisone_hyperglycema.pdf',
                       section: 'Hyperglycemia',
@@ -188,7 +188,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/cushing_syndrome.pdf',
                       section: 'Cushing syndrome & Hpa axis suppression ',
@@ -202,7 +202,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/psychosis.pdf',
                       section: 'Psychosis',
@@ -216,7 +216,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/musculoskeletal.pdf',
                       section: 'Musculoskeletal (myopathy)',
@@ -230,7 +230,7 @@ class Prednisone extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/git_disorders.pdf',
                       section: 'Git disorders ( peptic ulcer and gastric bleeding )',

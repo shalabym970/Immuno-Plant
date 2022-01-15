@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:immuno_plant/constant.dart';
 import 'package:immuno_plant/screens/classifications/immunosuppressants/immunosuppressants.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation.dart';
@@ -22,7 +21,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var _backgroundColor = Colors.white;
   var _headingColor = const Color(0xFFD04DB4);
-
   double _headingTop = 100;
 
   double _loginWidth = 0;
@@ -40,28 +38,37 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _checkVersion();
-  }
-
-  void _checkVersion() async {
     final newVersion = NewVersion(
       iOSId: "com.shalaby.immunoPlant",
       androidId: "com.shalaby.immunoPlant",
     );
-    // newVersion.showAlertIfNecessary(context: context);
-    final status  = await newVersion.getVersionStatus();
-    newVersion.showUpdateDialog(
-      context: context,
-      versionStatus: status! ,
-      dialogTitle: "Immuno Plant has an UPDATE!!!",
-      dismissButtonText: "Skip",
-      dialogText: "Please update the app from "+status.localVersion+" to "+status.storeVersion,
-      dismissAction: (){
-        Navigator.pop(context);
-      },
-      updateButtonText: "Lets update"
 
-    );
+    advancedStatusCheck(newVersion);
+  }
+
+  advancedStatusCheck(NewVersion newVersion) async {
+    final status = await newVersion.getVersionStatus();
+    if (status != null) {
+      debugPrint(status.releaseNotes);
+      debugPrint(status.appStoreLink);
+      debugPrint(status.localVersion);
+      debugPrint(status.storeVersion);
+      debugPrint(status.canUpdate.toString());
+      newVersion.showUpdateDialog(
+        context: context,
+        versionStatus: status,
+        dismissButtonText: "Skip",
+        dialogTitle: 'Immuno Plant has an UPDATE!!!',
+        dialogText: 'Please update the app from ' +
+            status.localVersion +
+            " to " +
+            status.storeVersion,
+        updateButtonText: "Lets update",
+        dismissAction: () {
+          Navigator.pop(context);
+        },
+      );
+    }
   }
 
   @override
@@ -343,7 +350,7 @@ class _HomePageState extends State<HomePage> {
           width: 40,
         ),
         applicationName: 'Immuno Plant',
-        applicationVersion: '1.0.0',
+        applicationVersion: '1.0.6',
         applicationLegalese: 'Developed by Mohamed Shalaby',
         children: [
           const Text(

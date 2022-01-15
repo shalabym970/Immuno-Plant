@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Basiliximab extends StatelessWidget {
   const Basiliximab({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class Basiliximab extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/basiliximab/hypersensitivity.pdf', section: 'Hypersensitivity',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/basiliximab/hypersensitivity.pdf', section: 'Hypersensitivity',)),
               );
             }),
         DrugsCard(
@@ -28,7 +28,7 @@ class Basiliximab extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) =>  const PdfViewer(pdfPass: 'assets/pdfs/transplantation/basiliximab/non_cardiogenic_pulmonary_edema.pdf', section: 'Non cardiogenic pulmonary edema',)),
+                MaterialPageRoute(builder: (context) =>  const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/basiliximab/non_cardiogenic_pulmonary_edema.pdf', section: 'Non cardiogenic pulmonary edema',)),
               );
             }),
       ],

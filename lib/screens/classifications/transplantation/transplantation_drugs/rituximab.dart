@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:immuno_plant/screens/pdf_splash_screen.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
 
 class Rituximab extends StatelessWidget {
   const Rituximab({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/infusion_reactions.pdf',
                       section: 'Infusion reactions',
@@ -34,7 +34,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/infections_general.pdf',
                       section: 'Infections (general)',
@@ -48,7 +48,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/hbv.pdf',
                       section: 'HBV reactivation',
@@ -62,7 +62,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/Parvovirus_b19_reactivation.pdf',
                       section: 'Parvovirus B19 reactivation',
@@ -76,7 +76,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/tb_reactivation.pdf',
                       section: 'TB reactivation',
@@ -90,7 +90,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/pml.pdf',
                       section: 'PML',
@@ -104,7 +104,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/meningoencephalitis.pdf',
                       section: 'Meningoencephalitis',
@@ -118,7 +118,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/neutropenia.pdf',
                       section: 'Neutropenia',
@@ -132,7 +132,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/thrombocytopenia.pdf',
                       section: 'Thrombocytopenia',
@@ -146,7 +146,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/severe_mucocutaneous_reactions.pdf',
                       section: 'Severe mucocutaneous reactions',
@@ -160,7 +160,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/cardiovascular_side_effects.pdf',
                       section: 'Cardiovascular side effects',
@@ -174,7 +174,7 @@ class Rituximab extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/mabthera/renal_toxicity.pdf',
                       section: 'Renal toxicity',

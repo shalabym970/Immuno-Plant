@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class ATGAntihymoglobin extends StatelessWidget {
   const ATGAntihymoglobin({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/DRUG_INTERACTIONS.pdf', section: 'Drug interactions',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/DRUG_INTERACTIONS.pdf', section: 'Drug interactions',)),
               );
             }),
         DrugsCard(
@@ -28,7 +28,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) =>  const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/HEMATOLOGICAL.pdf', section: 'Hematological',)),
+                MaterialPageRoute(builder: (context) =>  const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/HEMATOLOGICAL.pdf', section: 'Hematological',)),
               );
             }),
         DrugsCard(
@@ -37,7 +37,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/URINARY_TRACT_INFECTION.pdf', section: 'UTI',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/URINARY_TRACT_INFECTION.pdf', section: 'UTI',)),
               );
             }),
         DrugsCard(
@@ -46,7 +46,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/GASTROINTESTINAL.pdf', section: 'Gastrointestinal',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/GASTROINTESTINAL.pdf', section: 'Gastrointestinal',)),
               );
             }),
         DrugsCard(
@@ -55,7 +55,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/CARDIOVASCULAR.pdf', section: 'Cardiovascular',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/CARDIOVASCULAR.pdf', section: 'Cardiovascular',)),
               );
             }),
         DrugsCard(
@@ -64,7 +64,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/INFUSION_REACTIONS.pdf', section: 'Infusion reactions',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/INFUSION_REACTIONS.pdf', section: 'Infusion reactions',)),
               );
             }),
         DrugsCard(
@@ -73,7 +73,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/IMMUNOLOGIC.pdf', section: 'Immunological',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/IMMUNOLOGIC.pdf', section: 'Immunological',)),
               );
             }),
         DrugsCard(
@@ -82,7 +82,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/MUSCULOSKELETAL.pdf', section: 'Musculoskeletal',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/MUSCULOSKELETAL.pdf', section: 'Musculoskeletal',)),
               );
             }),
         DrugsCard(
@@ -91,7 +91,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/PSYCHIATRIC.pdf', section: 'Psychiatric',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/PSYCHIATRIC.pdf', section: 'Psychiatric',)),
               );
             }),
         DrugsCard(
@@ -100,7 +100,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/ERYTHEMA_SKIN_RASH_CHEMICAL_PHLEPITIS.pdf', section: 'Pain (Local And Systemic)',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/ERYTHEMA_SKIN_RASH_CHEMICAL_PHLEPITIS.pdf', section: 'Pain (Local And Systemic)',)),
               );
             }),
         DrugsCard(
@@ -109,7 +109,7 @@ class ATGAntihymoglobin extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const PdfViewer(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/RESPIRATORY.pdf', section: 'Respiratory',)),
+                MaterialPageRoute(builder: (context) => const PdfSplashScreen(pdfPass: 'assets/pdfs/transplantation/atg_antihymoglobin/RESPIRATORY.pdf', section: 'Respiratory',)),
               );
             }),
 

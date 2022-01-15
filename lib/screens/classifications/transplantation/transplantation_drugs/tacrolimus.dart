@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Tacrolimus extends StatelessWidget {
   const Tacrolimus({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/drug_interactions.pdf',
                       section: 'Drug interactions',
@@ -34,7 +34,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/level.pdf',
                       section: 'Level',
@@ -48,7 +48,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/cardiovascular.pdf',
                       section: 'Cardiovascular',
@@ -62,7 +62,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/neurotoxicity.pdf',
                       section: 'Neurotoxicity',
@@ -76,7 +76,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/Metabolic_ptdm.pdf',
                       section: 'Metabolic (PTDM)',
@@ -90,7 +90,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/Infection_bk_virus.pdf',
                       section: 'Infection (BK virus)',
@@ -104,7 +104,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/alopecia.pdf',
                       section: 'Alopecia',
@@ -118,7 +118,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/ophthalmic.pdf',
                       section: 'Ophthalmic',
@@ -132,7 +132,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/nephrotoxicity.pdf',
                       section: 'Nephrotoxicity',
@@ -146,7 +146,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/UTI.pdf',
                       section: 'UTI*',
@@ -160,7 +160,7 @@ class Tacrolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                       pdfPass:
                       'assets/pdfs/transplantation/tacrolimus/kaposi_sarcoma.pdf',
                       section: 'Kaposi sarcoma',

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Everolimus extends StatelessWidget {
   const Everolimus({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/drug_interactions.pdf',
                           section: 'Drug interactions',
@@ -34,7 +34,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/level.pdf',
                           section: 'Level',
@@ -48,7 +48,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/hypertension.pdf',
                           section: 'Hypertension',
@@ -62,7 +62,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/edema.pdf',
                           section: 'Edema(peripheral/Lymphedema)',
@@ -76,7 +76,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/proteinuria.pdf',
                           section: 'Proteinuria',
@@ -90,7 +90,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/dyslipidemia_general.pdf',
                           section: 'Dyslipidemia*',
@@ -104,7 +104,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/anemia.pdf',
                           section: 'Anemia',
@@ -118,7 +118,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/backpain.pdf',
                           section: 'Backpain',
@@ -132,7 +132,7 @@ class Everolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/everolimus/UTI.pdf',
                           section: 'UTI *',

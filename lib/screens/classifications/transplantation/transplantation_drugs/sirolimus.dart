@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/drugs_card.dart';
 
 import '../../../../constant.dart';
-import '../../pdf_viewer.dart';
+import '../../../pdf_splash_screen.dart';
 
 class Sirolimus extends StatelessWidget {
   const Sirolimus({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/drug_interactions.pdf',
                           section: 'Drug interactions',
@@ -34,7 +34,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/level.pdf',
                           section: 'Level',
@@ -48,7 +48,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/anemia.pdf',
                           section: 'Anemia',
@@ -62,7 +62,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/thrombocytopenia_and_leukopenia.pdf',
                           section: 'Thrombocytopenia and leukopenia',
@@ -76,7 +76,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/edema.pdf',
                           section: 'Edema',
@@ -90,7 +90,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/proteinuria.pdf',
                           section: 'Proteinuria',
@@ -104,7 +104,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/interstitial_pneumonitis.pdf',
                           section: 'Interstitial pneumonitis ',
@@ -118,7 +118,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/mouth_ulcers_stomatitis.pdf',
                           section: 'Mouth ulcers / stomatitis',
@@ -132,7 +132,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/infections.pdf',
                           section: 'Infections',
@@ -146,7 +146,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/thromboembolism.pdf',
                           section: 'Thromboembolism',
@@ -160,7 +160,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/lymphoceles.pdf',
                           section: 'Lymphoceles',
@@ -174,7 +174,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/arthralgia_osteopenia.pdf',
                           section: 'Arthralgia osteopenia',
@@ -188,7 +188,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/impaired_would_healing.pdf',
                           section: 'Impaired would healing ',
@@ -202,7 +202,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/acne.pdf',
                           section: 'Acne *',
@@ -216,7 +216,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/hypertension.pdf',
                           section: 'Hypertension *',
@@ -230,7 +230,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/UTI.pdf',
                           section: 'UTI *',
@@ -244,7 +244,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/hyperglycemia.pdf',
                           section: 'Hyperglycemia *',
@@ -258,7 +258,7 @@ class Sirolimus extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const PdfViewer(
+                    builder: (context) => const PdfSplashScreen(
                           pdfPass:
                               'assets/pdfs/transplantation/sirolimus/hyperlipidemia.pdf',
                           section: 'Hyperlipidemia',

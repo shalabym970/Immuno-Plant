@@ -31,14 +31,6 @@ class _PdfViewerState extends State<PdfViewer> {
                   document: PdfDocument.openAsset(widget.pdfPass)),
             ),
           ),
-          // RaisedButton(
-          //   child: Text('page2'),
-          //   onPressed: () {
-          //     pdfController.jumpToPage(2);
-          //     pdfController.animateToPage(2,
-          //         duration: Duration(seconds: 1), curve: Curves.linear);
-          //   },
-          // )
         ],
       ),
     );

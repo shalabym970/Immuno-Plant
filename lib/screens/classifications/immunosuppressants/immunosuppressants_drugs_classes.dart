@@ -6,6 +6,7 @@ import 'package:immuno_plant/widgets/floating_action_button.dart';
 
 import 'immunosuppressants_drugs_classes/calcineurin_inhibitors.dart';
 import 'immunosuppressants_drugs_classes/corticosteroids.dart';
+import 'immunosuppressants_drugs_classes/dihydrofolate_reductase_inhibitor.dart';
 import 'immunosuppressants_drugs_classes/inosine_monophosphate_dehydrogenase_inhibitors.dart';
 import 'immunosuppressants_drugs_classes/interleukin_1_inhibitor.dart';
 import 'immunosuppressants_drugs_classes/janus_kinase_inhibitors.dart';
@@ -44,25 +45,27 @@ class _ImmunosuppressantsDrugsClassesState
     if (widget.id == 1) {
       return  const CalcineurinInhibitors();
     } else if (widget.id == 2) {
-      return  const Corticosteroids();
+      return const Corticosteroids();
     } else if (widget.id == 3) {
-      return  const IMDH();
+      return const DihydrofolateReductaseInhibitor();
     } else if (widget.id == 4) {
-      return  const InterleukinInhibitor();
+      return const IMDH();
     } else if (widget.id == 5) {
-      return  const JanusKinaseInhibitors();
+      return const InterleukinInhibitor();
     } else if (widget.id == 6) {
-      return  const MTOR();
+      return const JanusKinaseInhibitors();
     } else if (widget.id == 7) {
-      return  const MonoclonalAntibiodies();
+      return const MTOR();
     } else if (widget.id == 8) {
-      return  const PolyclonalAntibiodies();
+      return const MonoclonalAntibiodies();
     } else if (widget.id == 9) {
-      return  const PyrimidineSynthesisInhibitors();
+      return const PolyclonalAntibiodies();
     } else if (widget.id == 10) {
-      return  SphingosinePhosphateReceptorModulator();
+      return const PyrimidineSynthesisInhibitors();
     } else if (widget.id == 11) {
-      return  TNFAlphaInhibitor();
+      return SphingosinePhosphateReceptorModulator();
+    } else if (widget.id == 12) {
+      return TNFAlphaInhibitor();
     } else {
       return const CustomAlertDialog();
     }

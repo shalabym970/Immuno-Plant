@@ -5,6 +5,7 @@ import 'package:immuno_plant/screens/classifications/immunosuppressants/immunosu
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation.dart';
 import 'package:immuno_plant/widgets/custom_link_text.dart';
 import 'package:immuno_plant/widgets/out_line_button.dart';
+import 'package:new_version/new_version.dart';
 import 'package:url_launcher/link.dart';
 
 import 'abbreviation.dart';
@@ -20,8 +21,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var _backgroundColor = Colors.white;
   var _headingColor = const Color(0xFFD04DB4);
-
   double _headingTop = 100;
+
 
   double _loginWidth = 0;
   double _loginHeight = 0;
@@ -38,10 +39,43 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    final newVersion = NewVersion(
+      iOSId: "com.shalaby.immunoPlant",
+      androidId: "com.shalaby.immunoPlant",
+    );
+
+    advancedStatusCheck(newVersion);
+  }
+
+  advancedStatusCheck(NewVersion newVersion) async {
+    final status = await newVersion.getVersionStatus();
+    if (status != null) {
+      debugPrint(status.releaseNotes);
+      debugPrint(status.appStoreLink);
+      debugPrint(status.localVersion);
+      debugPrint(status.storeVersion);
+      debugPrint(status.canUpdate.toString());
+      newVersion.showUpdateDialog(
+        context: context,
+        versionStatus: status,
+        dismissButtonText: "Skip",
+        dialogTitle: 'Immuno Plant has an UPDATE!!!',
+        dialogText: 'Please update the app from ' +
+            status.localVersion +
+            " to " +
+            status.storeVersion,
+        updateButtonText: "Lets update",
+        dismissAction: () {
+          Navigator.pop(context);
+        },
+      );
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    double _fontSize = MediaQuery.of(context).size.width * 0.05;
+    double _fontHeader = MediaQuery.of(context).size.width * 0.08;
     windowHeight = MediaQuery.of(context).size.height;
     windowWidth = MediaQuery.of(context).size.width;
 
@@ -81,7 +115,7 @@ class _HomePageState extends State<HomePage> {
     return Stack(
       children: <Widget>[
         AnimatedContainer(
-          height: MediaQuery.of(context).size.height,
+            height: MediaQuery.of(context).size.height,
             curve: Curves.fastLinearToSlowEaseIn,
             duration: const Duration(milliseconds: 1000),
             color: _backgroundColor,
@@ -124,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Text(
                                     appName,
                                     style: TextStyle(
-                                        color: _headingColor, fontSize: 28),
+                                        color: _headingColor, fontSize: _fontHeader),
                                   ),
                                 ),
                               ],
@@ -137,8 +171,8 @@ class _HomePageState extends State<HomePage> {
                               child: Text(
                                 "Dose modification of immunosuppressant drugs in different kidney disease modalities and management of adverse effects of transplantation drugs.",
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: _headingColor, fontSize: 16),
+                                style: TextStyle(
+                                    color: _headingColor, fontSize: _fontSize),
                               ),
                             ),
                           )
@@ -153,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   const SizedBox(
-                    height:100,
+                    height: 100,
                   ),
                   GestureDetector(
                     onTap: () {
@@ -172,13 +206,13 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           color: kPrimaryColor,
                           borderRadius: BorderRadius.circular(50)),
-                      child: const Center(
+                      child:  Center(
                         child: Material(
                           type: MaterialType.transparency,
                           child: Text(
                             "Get Started",
-                            style:
-                                TextStyle(color: kBackgroundColor, fontSize: 16),
+                            style: TextStyle(
+                                color: kBackgroundColor, fontSize: _fontSize),
                           ),
                         ),
                       ),
@@ -188,7 +222,6 @@ class _HomePageState extends State<HomePage> {
               ),
             )),
         AnimatedContainer(
-
           padding: const EdgeInsets.all(32),
           width: _loginWidth,
           height: _loginHeight,
@@ -211,19 +244,21 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 20),
                     child: Column(
-                      children: const [
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children:  [
                         Material(
                           type: MaterialType.transparency,
                           child: Text(
                             "Choose where you want ",
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: _fontSize),
                           ),
                         ),
                         Material(
                           type: MaterialType.transparency,
                           child: Text(
                             "us to help you",
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: _fontSize),
                           ),
                         ),
                       ],
@@ -232,22 +267,24 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 40,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Immunosuppressants(
-                                    section: 'Immunosuppressants',
-                                  )),
-                        );
-                      });
-                    },
-                    child: const Material(
-                      type: MaterialType.transparency,
-                      child: OutlineBtn(
-                        btnText: "Immunosuppressants",
+                  Center(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Immunosuppressants(
+                                      section: 'Immunosuppressants',
+                                    )),
+                          );
+                        });
+                      },
+                      child: const Material(
+                        type: MaterialType.transparency,
+                        child: OutlineBtn(
+                          btnText: "Immunosuppressants",
+                        ),
                       ),
                     ),
                   ),
@@ -284,7 +321,9 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Abbreviation(section: 'Abbreviation',)),
+                                  builder: (context) => const Abbreviation(
+                                        section: 'Abbreviation',
+                                      )),
                             );
                           });
                         }
@@ -296,7 +335,6 @@ class _HomePageState extends State<HomePage> {
                     text: 'About Us',
                     onTap: aboutImmunoPlant,
                   ),
-
                 ]),
               ],
             ),
@@ -307,6 +345,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void aboutImmunoPlant() {
+    double _fontSize = MediaQuery.of(context).size.width * 0.05;
     showAboutDialog(
         context: context,
         applicationIcon: Image.asset(
@@ -315,20 +354,20 @@ class _HomePageState extends State<HomePage> {
           width: 40,
         ),
         applicationName: 'Immuno Plant',
-        applicationVersion: '1.0.0',
+        applicationVersion: '1.0.6',
         applicationLegalese: 'Developed by Mohamed Shalaby',
         children: [
           const Text(
               'We are a group of fifteen senior clinical pharmacy students from Alexandria University  and we made IMMUNO-PLANT as our graduation project after a period of training in the nephrology department of Alexandria Main University Hospital. This application aims to provide accessible information to be used by physicians , where it is concerned with immunosuppressants dosing in kidney diseases and different dialysis modalities , in addition to grouping the management of the most common adverse effects that occur with the use of these drugs after transplantation.\n'),
-          const Text(
+           Text(
             'Group members: ',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: _fontSize),
           ),
           const Text(
-              '- Maiar Tarek Nomeir.\n- Manar Adel Ibrahim.\n- Mariam Hassan Mokhtar.\n- Mariam Mohamed Hassan.\n- Marwa Mohamed Elsayed.\n- Marwan Ibrahim Mohamed.\n- Mohamed Sherif Fathy.\n- Mohamed Taher Mohamed.\n- Myriam Elsayed Mahfouz.\n- Nancy Hassan Mohamed.\n- Nouran Abdalla Elsayed.\n- Nouran Mahmoud Tarek.\n- Nouran Nouh Mohamed.\n-Sara Khairy Fouad.\n- Yomna Ashraf Ashmawy.\n'),
-          const Text(
+              '- Maiar Tarek Nomeir.\n- Manar Adel Ibrahim.\n- Mariam Hassan Mokhtar.\n- Mariam Mohamed Hassan.\n- Marwa Mohamed Elsayed.\n- Marwan Ibrahim Mohamed.\n- Mohamed Sherif Fathy.\n- Mohamed Taher Mohamed.\n- Myriam Elsayed Mahfouz.\n- Nancy Hassan Mohamed.\n- Nouran Abdalla Elsayed.\n- Nouran Mahmoud Tarek.\n- Nouran Nouh Mohamed.\n- Sara Khairy Fouad.\n- Yomna Ashraf Ashmawy.\n'),
+           Text(
             'Project supervisors: ',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: _fontSize),
           ),
           const Text('- Dr. Enas Abd Elaziz Mohamed.'),
           Link(
@@ -352,28 +391,11 @@ class _HomePageState extends State<HomePage> {
               );
             },
           ),
-          const Text(
+           Text(
             'Application developer:',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: _fontSize),
           ),
-          const Text('Eng.Mohamed Shalaby.'),
-          Row(
-            children: [
-              const Text('Github: '),
-              Expanded(
-                child: Link(
-                  uri: Uri.parse('https://github.com/shalabym970'),
-                  target: LinkTarget.blank,
-                  builder: (BuildContext ctx, FollowLink? openLink) {
-                    return TextButton(
-                      onPressed: () => openLink,
-                      child: const Text('https://github.com/shalabym970'),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+          const Text('Mohamed Shalaby'),
           Row(
             children: [
               const Text('LinkedIn: '),

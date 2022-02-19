@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:immuno_plant/widgets/custom_app_bar.dart';
@@ -6,8 +7,10 @@ class Abbreviation extends StatelessWidget {
   const Abbreviation({Key? key, required this.section}) : super(key: key);
   final String section;
 
+
   @override
   Widget build(BuildContext context) {
+    double _fontSize = MediaQuery.of(context).size.width * 0.05;
     return Material(
       child: Scaffold(
         appBar: CustomAppBar(section: section),
@@ -21,21 +24,21 @@ class Abbreviation extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: DataTable(
                     dividerThickness: 5,
-                    columns: const [
+                    columns:  [
                       DataColumn(
                         numeric: true,
                           label: Text(
                           'No.',
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                          style: TextStyle(fontSize: _fontSize, fontWeight: FontWeight.bold)
                       )),
                       DataColumn(
                           label: Text(
                           'Abbreviation',
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                          style: TextStyle(fontSize: _fontSize, fontWeight: FontWeight.bold)
                       )),
                       DataColumn(label: Text(
                           'Stands for',
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                          style: TextStyle(fontSize: _fontSize, fontWeight: FontWeight.bold)
                       )),
                     ],
                     rows: const [
@@ -75,13 +78,8 @@ class Abbreviation extends StatelessWidget {
                         DataCell(Text('angiotensin receptor blocker')),
                       ]),
                       DataRow(cells: [
-                        DataCell(Text('8')),
-                        DataCell(Text('Arb',style: TextStyle(fontWeight: FontWeight.bold),)),
-                        DataCell(Text('angiotensin converting enzyme inhibitor')),
-                      ]),
-                      DataRow(cells: [
                         DataCell(Text('9')),
-                        DataCell(Text('Atg',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('ATG',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('anti thymocyte globulin')),
                       ]),
                       DataRow(cells: [
@@ -186,7 +184,7 @@ class Abbreviation extends StatelessWidget {
                       ]),
                       DataRow(cells: [
                         DataCell(Text('31')),
-                        DataCell(Text('DC cardioversion',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('DC Cardioversion',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('direct-current cardioversion')),
                       ]),
                       DataRow(cells: [
@@ -216,17 +214,17 @@ class Abbreviation extends StatelessWidget {
                       ]),
                       DataRow(cells: [
                         DataCell(Text('37')),
-                        DataCell(Text('HBsAg',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('HBSAg',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('hepatitis B surface antigen')),
                       ]),
                       DataRow(cells: [
                         DataCell(Text('38')),
-                        DataCell(Text('HD',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('Hd',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('Hemodialysis')),
                       ]),
                       DataRow(cells: [
                         DataCell(Text('39')),
-                        DataCell(Text('HDF',style: TextStyle(fontWeight: FontWeight.bold),)),
+                        DataCell(Text('Hdf',style: TextStyle(fontWeight: FontWeight.bold),)),
                         DataCell(Text('Hemodiafiltration')),
                       ]),
                       DataRow(cells: [

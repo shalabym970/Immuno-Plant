@@ -59,10 +59,21 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
           ),
           ClassificationsCard(
             id: 3,
+            title: 'Dihydrofolate reductase inhibitor',
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>   ImmunosuppressantsDrugsClasses(section: 'Dihydrofolate reductase inhibitor',id: 3,)),
+              );
+            },
+          ),
+          ClassificationsCard(
+            id: 4,
             title: 'Inosine monophosphate dehydrogenase (IMDH) inhibitors',
             onTap: () {
               setState(() {
-                id = 3;
+                id = 4;
               });
               Navigator.push(
                 context,
@@ -74,11 +85,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 4,
+            id: 5,
             title: 'Interleukin-1 inhibitor',
             onTap: () {
               setState(() {
-                id = 4;
+                id = 5;
               });
               Navigator.push(
                 context,
@@ -90,11 +101,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 5,
+            id: 6,
             title: 'Janus kinase inhibitors',
             onTap: () {
               setState(() {
-                id = 5;
+                id = 6;
               });
               Navigator.push(
                 context,
@@ -104,11 +115,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 6,
+            id: 7,
             title: 'Mechanistic target of rapamycin (MTOR) inhibitors',
             onTap: () {
               setState(() {
-                id = 6;
+                id = 7;
               });
               Navigator.push(
                 context,
@@ -120,11 +131,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 7,
+            id: 8,
             title: 'Monoclonal antibiodies',
             onTap: () {
               setState(() {
-                id = 7;
+                id = 8;
               });
               Navigator.push(
                 context,
@@ -136,11 +147,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 8,
+            id: 9,
             title: 'Polyclonal antibiodies',
             onTap: () {
               setState(() {
-                id = 8;
+                id = 9;
               });
               Navigator.push(
                 context,
@@ -150,11 +161,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 9,
+            id: 10,
             title: 'Pyrimidine synthesis inhibitors',
             onTap: () {
               setState(() {
-                id = 9;
+                id = 10;
               });
               Navigator.push(
                 context,
@@ -166,11 +177,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 10,
+            id: 11,
             title: 'Sphingosine 1-phosphate receptor modulator',
             onTap: () {
               setState(() {
-                id = 10;
+                id = 11;
               });
               Navigator.push(
                 context,
@@ -180,11 +191,11 @@ class _ImmunosuppressantsState extends State<Immunosuppressants> {
             },
           ),
           ClassificationsCard(
-            id: 11,
+            id: 12,
             title: 'TNF-alpha inhibitor',
             onTap: () {
               setState(() {
-                id = 11;
+                id = 12;
               });
               Navigator.push(
                 context,

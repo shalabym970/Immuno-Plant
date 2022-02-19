@@ -27,7 +27,7 @@ class ImmunosuppressantsDrugCases extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         children: <Widget>[
           DrugsCard(
-              title: 'Normal Dose (Kidney Trasnplant)',
+              title: 'Normal Dose (Kidney Transplant)',
               icon: cardDrugIcon,
               onTap: () {
                 Navigator.push(
@@ -334,12 +334,7 @@ class ImmunosuppressantsDrugCases extends StatelessWidget {
       differentIndications =
           'assets/pdfs/immunosuppressants/calcineurin_inhibitors/tacrolimus/tacrolimus_other_indications.pdf';
       return differentIndications;
-    }
-    // else if (id == 'Prednisone') {
-    //   differentIndications = '';
-    //   return differentIndications;
-    // }
-    else if (id == 'Mycophenolate_mofetil') {
+    } else if (id == 'Mycophenolate_mofetil') {
       differentIndications =
           'assets/pdfs/immunosuppressants/inosine_monophosphate_dehydrogenase_inhibitors/mycophenolate/mycophenolic_acid_other_indications.pdf';
       return differentIndications;
@@ -347,12 +342,7 @@ class ImmunosuppressantsDrugCases extends StatelessWidget {
       differentIndications =
           'assets/pdfs/immunosuppressants/inosine_monophosphate_dehydrogenase_inhibitors/azathioorine/azathioprine_other_indications.pdf';
       return differentIndications;
-    }
-    // else if (id == 'Anakinra') {
-    //   differentIndications = '';
-    //   return differentIndications;
-    // }
-    else if (id == 'Tofacitinib') {
+    } else if (id == 'Tofacitinib') {
       differentIndications =
           'assets/pdfs/immunosuppressants/janus_kinase_inhibitors/tofacitinib/tofacitinib_other_indications.pdf';
       return differentIndications;

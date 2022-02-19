@@ -28,7 +28,7 @@ class Prednisone extends StatelessWidget {
               );
             }),
         DrugsCard(
-            title: 'GLUCOMA',
+            title: 'Glucoma',
             icon: cardDrugIcon,
             onTap: () {
               Navigator.push(
@@ -37,7 +37,7 @@ class Prednisone extends StatelessWidget {
                     builder: (context) => const PdfViewer(
                       pdfPass:
                       'assets/pdfs/transplantation/prednisone/glucoma.pdf',
-                      section: 'GLUCOMA',
+                      section: 'Glucoma',
                     )),
               );
             }),

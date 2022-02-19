@@ -32,16 +32,6 @@ class MonoclonalAntibiodies extends StatelessWidget {
                     builder: (context) =>  ImmunosuppressantsDrugCases(section: 'Rituximab',id:'Rituximab' ,)),
               );
             }),
-        DrugsCard(
-            icon: cardDrugsListIcon,
-            title: 'Methotrexate',
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>  ImmunosuppressantsDrugCases(section: 'Methotrexate',id: 'Methotrexate',)),
-              );
-            }),
       ],
     );
   }

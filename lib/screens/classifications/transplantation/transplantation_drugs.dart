@@ -4,6 +4,7 @@ import 'package:immuno_plant/screens/classifications/transplantation/transplanta
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/basiliximab.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/cyclosporine.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/everolimus.dart';
+import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/prednisone.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/rituximab.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/mycophenolate_mofetil_mmf.dart';
 import 'package:immuno_plant/screens/classifications/transplantation/transplantation_drugs/sirolimus.dart';
@@ -41,7 +42,7 @@ class _TransplantationDrugsState extends State<TransplantationDrugs> {
     } else if (widget.id == 2) {
       return const Tacrolimus();
     } else if (widget.id == 3) {
-      return const Cyclosporine();
+      return const Prednisone();
     } else if (widget.id == 4) {
       return const MMF();
     } else if (widget.id == 5) {

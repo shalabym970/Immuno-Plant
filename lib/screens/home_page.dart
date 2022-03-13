@@ -354,7 +354,7 @@ class _HomePageState extends State<HomePage> {
           width: 40,
         ),
         applicationName: 'Immuno Plant',
-        applicationVersion: '1.0.6',
+        applicationVersion: '1.0.9',
         applicationLegalese: 'Developed by Mohamed Shalaby',
         children: [
           const Text(
